@@ -1,0 +1,43 @@
+###
+POST http://localhost:3000/api/v1/users/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Jhon Anderson",
+    "lastname": "Prueba 3",
+    "age": 28,
+    "document": "111111",
+    "email": "anderson@uam",
+    "adress": {
+        "city": "Manizales",
+        "code_zip": "17001"},
+    "pets": ["kata", "keta", "kita", "kota"] 
+}
+
+
+###
+GET http://localhost:3000/api/v1/users/users HTTP/1.1
+
+
+###
+GET http://localhost:3000/api/v1/users/636f9945243481ceb139498a HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/v1/users/63647fa0457991766631d6ad HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/users/6365aac580cfb1320a3eb377 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "username": "modificado",
+    "lastname": "modificado",
+    "age": 11,
+    "document": "111111",
+    "email": "modificado@uam",
+    "adress": {
+        "city": "Manizales",
+        "code_zip": "17001"},
+    "pets": ["kata", "keta", "kita", "kota"] 
+}
